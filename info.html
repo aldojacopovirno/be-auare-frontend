@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>BeAuare - Discover More</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    body {
+      font-family: 'Manrope', "Noto Sans", sans-serif;
+      background-color: #F8F9FA;color: #1F2937;}
+    .primary-color {
+      color: #007AFF;}
+    .bg-primary-color {
+      background-color: #007AFF;
+    }
+    .border-primary-color {
+      border-color: #007AFF;
+    }
+    .hover-bg-primary-color-darker:hover {
+      background-color: #0056b3;}
+    .nav-link-active {
+      color: #007AFF;
+      position: relative;
+      font-weight: 600;}
+    .nav-link-active::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #007AFF;
+      border-radius: 1px;}
+    .header-shadow {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);}
+    .card-hover-effect {
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .card-hover-effect:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);}
+    .button-primary {
+      background-color: #007AFF;
+      color: white;
+      font-weight: 500;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;transition: background-color 0.2s ease-in-out;
+    }
+    .button-primary:hover {
+      background-color: #0056b3;
+    }
+    .button-secondary {
+      background-color: #E5E7EB;color: #1F2937;font-weight: 500;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: background-color 0.2s ease-in-out;
+    }
+    .button-secondary:hover {
+      background-color: #D1D5DB;}
+    .text-lead {
+      font-size: 1.125rem;color: #4B5563;line-height: 1.6;
+    }
+    .section-title {
+      font-size: 2.25rem;font-weight: 700;
+      letter-spacing: -0.025em;
+      color: #111827;}
+    .footer-bg {
+      background-color: #FFFFFF;border-top: 1px solid #E5E7EB;}
+  </style>
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 px-6 sm:px-10 py-4 header-shadow sticky top-0 bg-white z-50">
+<div class="flex items-center gap-3">
+<div class="size-8 primary-color">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<a class="text-xl font-bold leading-tight tracking-[-0.015em] text-slate-800" href="/">BeAuare</a>
+</div>
+<nav class="flex items-center gap-6 md:gap-8">
+<a class="text-sm font-medium leading-normal text-slate-600 hover:primary-color transition-colors relative pb-1" href="#">Home</a>
+<a class="text-sm font-medium leading-normal text-slate-600 hover:primary-color transition-colors relative pb-1" href="#">My Profile</a>
+<a class="text-sm font-medium leading-normal text-slate-600 hover:primary-color transition-colors relative pb-1" href="#">Check-up</a>
+<a class="text-sm font-medium leading-normal nav-link-active relative pb-1" href="#">Discover More</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center rounded-full h-9 w-9 bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path>
+</svg>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9 border border-slate-200" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdGs13GmsLtzhvq0eJ71JFLCOkPP1J_PSrmlIK-TdzYxbBs782AAaJUiO6yfGOcLEEOR9_ZuCeYNj5QYiohUjxoSgMrhOWA8sYDVDX5zfVlN1ABBjJ9aIp_cFjA9koc5yRte_cw8aJsoo-EGpnij-qB29Zw1shywwBuST0KYonYOfkC8KsmgD_cjKjFH51OXt67Zp9TlWu7rdc8EL_Gvg81vOME1bauBmKHiimQoajrmb4Pc3kJRUgCXt9NCCgB6fuIVARzmVG4c0");'></div>
+</div>
+</header>
+<main class="flex-1 px-6 sm:px-10 md:px-20 lg:px-40 py-12 md:py-16">
+<div class="layout-content-container mx-auto flex max-w-5xl flex-col items-center">
+<header class="text-center mb-12 md:mb-16">
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-4 primary-color">Discover More</h1>
+<p class="text-lead max-w-3xl mx-auto">
+              BeAuare is your personal insurance advisor, powered by Unipol. We help you understand your insurance needs, assess your risks, and find the best coverage options. Our
+              platform offers personalized advice, simulations, and easy access to insurance products, all in one place.
+            </p>
+</header>
+<section class="w-full">
+<h2 class="section-title mb-10 text-center">What We Offer</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 card-hover-effect">
+<div class="p-3 rounded-lg bg-primary-color/10 self-start primary-color">
+<svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-lg font-semibold leading-tight mb-2 text-slate-800">Personalized Profiling</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Create a detailed profile to help us understand your unique circumstances and insurance needs.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 card-hover-effect">
+<div class="p-3 rounded-lg bg-primary-color/10 self-start primary-color">
+<svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,40H48A16,16,0,0,0,32,56v58.77c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56l160,0Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-lg font-semibold leading-tight mb-2 text-slate-800">Risk Assessment</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Get a comprehensive assessment of your risks across various categories, such as health, property, and travel.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 card-hover-effect">
+<div class="p-3 rounded-lg bg-primary-color/10 self-start primary-color">
+<svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-lg font-semibold leading-tight mb-2 text-slate-800">Coverage Simulation</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Simulate different coverage scenarios to see how they would protect you in various situations.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-16 md:mt-20 text-center w-full">
+<h2 class="section-title mb-4">Ready to Get Started?</h2>
+<p class="text-lead mb-8 max-w-xl mx-auto">Take the first step towards better insurance understanding and peace of mind. Create your profile or explore our tools today.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="button-primary inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-color" href="#">
+                Create My Profile
+              </a>
+<a class="button-secondary inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400" href="#">
+                Explore Tools
+              </a>
+</div>
+</section>
+</div>
+</main>
+<footer class="footer-bg">
+<div class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+<nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8">
+<a class="text-sm text-slate-500 hover:text-slate-700 transition-colors" href="#">Privacy Policy</a>
+<a class="text-sm text-slate-500 hover:text-slate-700 transition-colors" href="#">Terms of Service</a>
+<a class="text-sm text-slate-500 hover:text-slate-700 transition-colors" href="#">Contact Us</a>
+<a class="text-sm text-slate-500 hover:text-slate-700 transition-colors" href="#">About Unipol</a>
+</nav>
+<p class="text-center text-xs leading-5 text-slate-500">© 2024 BeAuare. All rights reserved. Powered by Unipol.</p>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>

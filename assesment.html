@@ -1,0 +1,280 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B600%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<title>BeAuare - Health Risk Assessment</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    :root {
+      --primary-color: #1993E5;--secondary-color: #00C853;--background-dark: #111B22;--surface-dark: #1A2932;--on-surface-dark: #FFFFFF;--on-surface-muted-dark: #A0B3C1;--border-dark: #2A3B4A;--background-light: #F7F9FA;--surface-light: #FFFFFF;--on-surface-light: #1F2937;--on-surface-muted-light: #6B7280;--border-light: #E5E7EB;}
+    .hover-glow {
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .hover-glow:hover {
+      box-shadow: 0 0 15px 5px rgba(25, 147, 229, 0.5);}
+    body {
+      font-family: 'Manrope', 'Noto Sans', sans-serif;
+    }.dark body, .dark {
+      background-color: var(--background-dark);
+      color: var(--on-surface-dark);
+    }
+    .dark .bg-header { background-color: var(--background-dark); }
+    .dark .bg-surface { background-color: var(--surface-dark); }
+    .dark .text-primary { color: var(--primary-color); }
+    .dark .text-muted { color: var(--on-surface-muted-dark); }
+    .dark .border-color { border-color: var(--border-dark); }
+    .dark .hover-text-primary:hover { color: var(--primary-color); }
+    .dark .bg-button-primary { background-color: var(--primary-color); }
+    .dark .bg-button-primary:hover { background-color: rgba(25, 147, 229, 0.8); }.dark .bg-button-secondary { background-color: var(--surface-dark); }
+    .dark .bg-button-secondary:hover { background-color: var(--border-dark); }
+    .dark .border-primary { border-color: var(--primary-color); }
+    .dark .table-header-bg { background-color: #1F2D39; }.dark .table-row-border { border-color: var(--border-dark); }
+    .dark .breadcrumb-active { color: var(--on-surface-dark); }
+    .dark .breadcrumb-inactive { color: var(--on-surface-muted-dark); }
+    .dark .breadcrumb-inactive:hover { color: var(--primary-color); }.light body, .light {
+      background-color: var(--background-light);
+      color: var(--on-surface-light);
+    }
+    .light .bg-header { background-color: var(--surface-light); }.light .bg-surface { background-color: var(--surface-light); }
+    .light .text-primary { color: var(--primary-color); }
+    .light .text-muted { color: var(--on-surface-muted-light); }
+    .light .border-color { border-color: var(--border-light); }
+    .light .hover-text-primary:hover { color: var(--primary-color); }
+    .light .bg-button-primary { background-color: var(--primary-color); color: var(--on-surface-dark); }.light .bg-button-primary:hover { background-color: rgba(25, 147, 229, 0.8); }.light .bg-button-secondary { background-color: #E5E7EB; }.light .bg-button-secondary:hover { background-color: #D1D5DB; }
+    .light .border-primary { border-color: var(--primary-color); }
+    .light .table-header-bg { background-color: #F3F4F6; }.light .table-row-border { border-color: var(--border-light); }
+    .light .breadcrumb-active { color: var(--on-surface-light); }
+    .light .breadcrumb-inactive { color: var(--on-surface-muted-light); }
+    .light .breadcrumb-inactive:hover { color: var(--primary-color); }
+    .light .text-white { color: var(--on-surface-light); }.light .text-white.override-light { color: #FFFFFF !important; }.light .bg-icon-button { background-color: #E5E7EB; }
+    .light .bg-icon-button:hover { background-color: #D1D5DB; }
+    .light .text-icon { color: var(--on-surface-light); }
+    .light .profile-border { border-color: var(--primary-color) }
+    .light input[type="text"], .light input[type="email"], .light input[type="number"], .light select, .light textarea {
+        background-color: var(--surface-light);
+        border-color: var(--border-light);
+        color: var(--on-surface-light);
+    }
+    .light input[type="text"]:focus, .light input[type="email"]:focus, .light input[type="number"]:focus, .light select:focus, .light textarea:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 1px var(--primary-color);
+    }
+    .light ::placeholder {
+        color: var(--on-surface-muted-light);
+    }
+  </style>
+</head>
+<body class="dark">
+<div class="relative flex size-full min-h-screen flex-col group/design-root">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-color px-10 py-3 sticky top-0 z-50 bg-header">
+<div class="flex items-center gap-4">
+<svg class="text-primary" fill="none" height="32" viewBox="0 0 48 48" width="32" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h2 class="text-2xl font-bold tracking-[-0.015em] text-white">BeAuare</h2>
+</div>
+<nav class="flex items-center gap-8 text-base font-medium">
+<a class="text-white hover-text-primary transition-colors py-2" href="#">Home</a>
+<a class="text-primary font-semibold border-b-2 border-primary py-2" href="#">Check-up</a>
+<a class="text-white hover-text-primary transition-colors py-2" href="#">Simulations</a>
+<a class="text-white hover-text-primary transition-colors py-2" href="#">Advice</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-icon-button bg-button-secondary text-icon text-white transition-colors hover-glow">
+<span class="material-icons-outlined text-xl">chat_bubble_outline</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-icon-button bg-button-secondary text-icon text-white transition-colors hover-glow">
+<span class="material-icons-outlined text-xl">notifications_none</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary profile-border hover-glow" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYcYqZFKg4nQfK6jFgoZ0Cbo_p5iszV3tBdl5hxKYKrJ9qnhcqOa0G2o8D9oWzOnLpQO6Rt-7JMkfxSkxKjMfOfXaiJSmOTFieTeS6Pv-FQTZrQ_uBKgKIWDtpnKfnjCPFRzyqqvKGQiwU1luhCoL9mgsm7WVF6Khr9fEdbmI4ht-UVSlRBrblUwFKE1quxjCmzmrC0aYPVxy3li04SXezoWu0sWOOsEd-NuwZ-7x7iKVkJHNB3bmG_0mC1VH2jYzjNlXeQp3CUZw");'></div>
+</div>
+</header>
+<main class="px-10 md:px-20 lg:px-40 py-8 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-5xl flex-1">
+<div class="flex items-center gap-2 p-4 text-sm font-medium">
+<a class="breadcrumb-inactive hover-text-primary transition-colors" href="#">Check-up</a>
+<span class="text-muted">/</span>
+<span class="breadcrumb-active">Health</span>
+</div>
+<div class="p-4">
+<h1 class="text-3xl font-bold tracking-tight text-white">Health Risk Assessment</h1>
+<p class="text-muted text-base mt-2">
+              Your health risk assessment provides a comprehensive overview of your current health status and potential future risks. This assessment is based on your lifestyle, medical history, and other relevant factors. Understanding these risks can help you make informed decisions about your health and take proactive steps to mitigate potential issues.
+            </p>
+</div>
+<section class="p-4 mt-6">
+<h2 class="text-xl font-semibold tracking-tight text-white">Risk Details</h2>
+<p class="text-muted text-base mt-1">
+              This section provides detailed information about the specific health risk you selected. It includes an overview of the risk, its potential economic impact, and its incidence rate within the population.
+            </p>
+<div class="mt-6 grid grid-cols-1 md:grid-cols-[auto_1fr] gap-x-8 gap-y-4 border-t border-color pt-6">
+<p class="text-muted text-sm">Risk Type</p>
+<p class="text-white text-sm font-medium">Cardiovascular Disease</p>
+<p class="text-muted text-sm">Economic Impact</p>
+<p class="text-white text-sm font-medium">$50,000 - $100,000</p>
+<p class="text-muted text-sm">Incidence Rate</p>
+<p class="text-white text-sm font-medium">1 in 3 adults</p>
+</div>
+</section>
+<section class="p-4 mt-8">
+<h2 class="text-xl font-semibold tracking-tight text-white">Risk Evolution</h2>
+<p class="text-muted text-base mt-1">
+              The graph below illustrates how your exposure to this health risk may change over time. Factors such as lifestyle changes, medical interventions, and genetic predispositions can influence this evolution. You can interact with the graph to simulate the impact of different actions on your risk trajectory.
+            </p>
+<div class="mt-6 p-6 bg-surface rounded-xl shadow-lg">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-base font-medium text-white">Health Risk Over Time</p>
+<p class="text-3xl font-bold text-white mt-1">Medium</p>
+</div>
+<div class="text-right">
+<p class="text-sm text-muted">In 5 Years</p>
+<p class="text-lg font-semibold text-[#0BDA5B]">
+                +10%
+</p>
+</div>
+</div>
+<div class="mt-6">
+<svg fill="none" height="160" preserveAspectRatio="none" viewBox="-3 0 478 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H326.769H0V109Z" fill="url(#paint0_linear_1131_5935_themed)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="var(--primary-color)" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1131_5935_themed" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="var(--primary-color)" stop-opacity="0.4"></stop>
+<stop offset="1" stop-color="var(--primary-color)" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+<div class="flex justify-around mt-2 text-xs font-medium text-muted">
+<span>2024</span>
+<span>2025</span>
+<span>2026</span>
+<span>2027</span>
+<span>2028</span>
+</div>
+</div>
+</div>
+</section>
+<section class="p-4 mt-8">
+<h2 class="text-xl font-semibold tracking-tight text-white">Mitigation Strategies</h2>
+<p class="text-muted text-base mt-1">
+              Here are some best practices you can follow to reduce your exposure to this health risk. Implementing these strategies can positively impact the evolution of your risk, as reflected in the graph above.
+            </p>
+<div class="mt-6 @container">
+<div class="overflow-hidden rounded-xl border border-color bg-surface">
+<table class="w-full text-sm">
+<thead class="table-header-bg">
+<tr>
+<th class="px-6 py-4 text-left font-semibold text-white w-[35%]">Strategy</th>
+<th class="px-6 py-4 text-left font-semibold text-white w-[45%]">Description</th>
+<th class="px-6 py-4 text-left font-semibold text-white w-[20%]">Impact</th>
+</tr>
+</thead>
+<tbody class="divide-y table-row-border">
+<tr>
+<td class="px-6 py-4 text-white align-top">Regular Exercise</td>
+<td class="px-6 py-4 text-muted align-top">
+                        Engage in at least 150 minutes of moderate-intensity or 75 minutes of vigorous-intensity aerobic activity per week.
+                      </td>
+<td class="px-6 py-4 align-top">
+<button class="w-full h-9 px-4 rounded-md bg-button-primary text-white override-light text-sm font-medium transition-colors hover-glow">
+                          High
+                        </button>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 text-white align-top">Healthy Diet</td>
+<td class="px-6 py-4 text-muted align-top">
+                        Consume a balanced diet rich in fruits, vegetables, whole grains, and lean proteins, while limiting saturated fats, sugars, and sodium.
+                      </td>
+<td class="px-6 py-4 align-top">
+<button class="w-full h-9 px-4 rounded-md bg-button-primary text-white override-light text-sm font-medium transition-colors hover-glow">
+                          High
+                        </button>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 text-white align-top">Regular Check-ups</td>
+<td class="px-6 py-4 text-muted align-top">
+                        Schedule regular health check-ups with your doctor to monitor your health and identify potential issues early.
+                      </td>
+<td class="px-6 py-4 align-top">
+<button class="w-full h-9 px-4 rounded-md bg-button-secondary text-white override-light text-sm font-medium transition-colors hover-glow">
+                          Medium
+                        </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<div class="mt-10 flex justify-end p-4">
+<a class="inline-flex items-center gap-2 rounded-lg bg-button-primary px-6 py-3 text-base font-semibold text-white override-light shadow-md transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary-color)] hover-glow" href="#">
+<span>Continue to Next Step</span>
+<span class="material-icons-outlined text-xl">arrow_forward</span>
+</a>
+</div>
+</div>
+</main>
+<footer class="border-t border-color mt-auto px-10 py-8 bg-header">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<svg class="text-primary" fill="none" height="28" viewBox="0 0 48 48" width="28" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h3 class="text-xl font-bold tracking-[-0.015em] text-white">BeAuare</h3>
+</div>
+<p class="text-sm text-muted mb-2">Powered by Unipol</p>
+<p class="text-xs text-muted opacity-75">Your trusted partner in navigating life's uncertainties.</p>
+</div>
+<div>
+<h4 class="text-base font-semibold text-white mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Home</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Check-up</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Simulations</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Advice</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-base font-semibold text-white mb-4">Resources</h4>
+<ul class="space-y-2">
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">FAQ</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Support Center</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-base font-semibold text-white mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-color flex flex-col sm:flex-row justify-between items-center">
+<p class="text-sm text-muted">© 2024 BeAuare. All rights reserved.</p>
+<div class="flex gap-4 mt-4 sm:mt-0">
+<a aria-label="Facebook" class="text-muted hover-text-primary transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"></path></svg>
+</a>
+<a aria-label="Twitter" class="text-muted hover-text-primary transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.477c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.213 0-.425-.015-.637A9.952 9.952 0 0024 4.555h.003z"></path></svg>
+</a>
+<a aria-label="Instagram" class="text-muted hover-text-primary transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
