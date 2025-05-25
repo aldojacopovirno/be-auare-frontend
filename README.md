@@ -31,6 +31,3 @@ BeAuare is a modern, user-centric frontend prototype for an insurance advisory p
 - HTML5, CSS3 (TailwindCSS via CDN)
 - Google Fonts (Manrope, Noto Sans)
 - Material Icons
-
-## License
-This project is for demonstration and prototyping purposes. Please contact the author for usage or licensing details. 
