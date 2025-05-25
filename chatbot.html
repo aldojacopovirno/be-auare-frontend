@@ -11,50 +11,63 @@
       width: 6px;
     }
     .scrollbar-thin::-webkit-scrollbar-track {
-      background: #f1f1f1;
+      background: #F3F4F6;
       border-radius: 10px;
     }
     .scrollbar-thin::-webkit-scrollbar-thumb {
-      background: #c1c1c1;
+      background: #D1D5DB;
       border-radius: 10px;
     }
     .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-      background: #a1a1a1;
+      background: #9CA3AF;
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+<body class="bg-gray-50 text-gray-700" style='font-family: Manrope, "Noto Sans", sans-serif;'>
 <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
-<header class="sticky top-0 z-50 flex h-16 w-full items-center justify-between bg-slate-50/80 px-6 shadow-sm backdrop-blur-md">
-<div class="flex items-center gap-2">
-<svg class="text-[#3f8cbf]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-<path d="m9 12 2 2 4-4"></path>
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-color px-10 py-3 sticky top-0 z-50 bg-header shadow-sm">
+<div class="flex items-center gap-4">
+<svg class="text-primary" fill="none" height="32" viewBox="0 0 48 48" width="32" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
 </svg>
-<h1 class="text-xl font-bold text-[#3f8cbf]">BeAuare</h1>
+<h2 class="text-2xl font-bold tracking-[-0.015em] text-heading">BeAuare</h2>
 </div>
-<p class="text-sm text-slate-600">Powered by <span class="font-semibold">Unipol</span></p>
+<nav class="flex items-center gap-8 text-base font-medium">
+<a class="text-body hover-text-primary transition-colors py-2" href="#">Home</a>
+<a class="text-primary font-semibold border-b-2 border-primary py-2" href="#">Check-up</a>
+<a class="text-body hover-text-primary transition-colors py-2" href="#">Simulations</a>
+<a class="text-body hover-text-primary transition-colors py-2" href="#">Advice</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-icon-button text-icon transition-colors hover-glow">
+<span class="material-icons-outlined text-xl">chat_bubble_outline</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-icon-button text-icon transition-colors hover-glow">
+<span class="material-icons-outlined text-xl">notifications_none</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary profile-border hover-glow" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYcYqZFKg4nQfK6jFgoZ0Cbo_p5iszV3tBdl5hxKYKrJ9qnhcqOa0G2o8D9oWzOnLpQO6Rt-7JMkfxSkxKjMfOfXaiJSmOTFieTeS6Pv-FQTZrQ_uBKgKIWDtpnKfnjCPFRzyqqvKGQiwU1luhCoL9mgsm7WVF6Khr9fEdbmI4ht-UVSlRBrblUwFKE1quxjCmzmrC0aYPVxy3li04SXezoWu0sWOOsEd-NuwZ-7x7iKVkJHNB3bmG_0mC1VH2jYzjNlXeQp3CUZw");'></div>
+</div>
 </header>
 <main class="flex-1">
 <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 @container">
 <div class="lg:col-span-1 bg-white rounded-2xl shadow-lg flex flex-col h-[calc(100vh-10rem)]">
-<div class="p-6 border-b border-slate-200">
-<h3 class="text-xl font-semibold text-slate-800">Chat with our advisor</h3>
+<div class="p-6 border-b border-gray-200">
+<h3 class="text-xl font-semibold text-gray-800">Chat with our advisor</h3>
 </div>
 <div class="flex-1 p-6 space-y-6 overflow-y-auto scrollbar-thin">
 <div class="flex items-end gap-3">
 <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 h-10 shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKy25nSoJVGtxWtTBWj71jO7MyC5DYMeEWF-H4KE-IivGMx7RK76tjc8jk7N5XdZPSiXmjsG1aB3y-kngH3UlOYyb6H3ZkXm7qFrjt4Z3bfpSegWeTDVLArwJWbinJEOdY8bTJug93Tv_Rd-47EB1ejY9otG6CfUKgcM6UO-HuTL6V5uEJ89smqqDLhUwEYhCR3cpGySI89_wQuuzNTH6Wr-f7DGk_mesEo8LnwMnwYlU4mqjUIMkB8Z9MY4VJdTi6zGrVjykuMlQ");'></div>
 <div class="flex flex-1 flex-col gap-1 items-start">
-<p class="text-slate-500 text-xs font-medium">Advisor</p>
-<p class="text-sm font-normal leading-relaxed flex max-w-xs rounded-xl rounded-bl-none px-4 py-3 bg-slate-100 text-slate-700">
+<p class="text-gray-500 text-xs font-medium">Advisor</p>
+<p class="text-sm font-normal leading-relaxed flex max-w-xs rounded-xl rounded-bl-none px-4 py-3 bg-gray-100 text-gray-700">
                   Hi there! I'm here to help you find the best insurance options. What are your main concerns or priorities when it comes to insurance?
                 </p>
 </div>
 </div>
 <div class="flex items-end gap-3 justify-end">
 <div class="flex flex-1 flex-col gap-1 items-end">
-<p class="text-slate-500 text-xs font-medium text-right">You</p>
-<p class="text-sm font-normal leading-relaxed flex max-w-xs rounded-xl rounded-br-none px-4 py-3 bg-[#3f8cbf] text-white">
+<p class="text-gray-500 text-xs font-medium text-right">You</p>
+<p class="text-sm font-normal leading-relaxed flex max-w-xs rounded-xl rounded-br-none px-4 py-3 bg-blue-600 text-white">
                   I'm looking for comprehensive coverage for my car and home, but I also want to make sure it fits my budget.
                 </p>
 </div>
@@ -63,18 +76,18 @@
 <div class="flex items-end gap-3">
 <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 h-10 shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEjZ9y6MPyTLB-cAH-j4OKORTkGTAOCJ-bT2KTszT9KfwcVP_rU44qgxN1EaHffCI7TslGAewa8uZnJU_um_Xg_vMtlI2UBpG3S5I4mjZiCYMWkYQt9bnRcts8aTOsyBa7pWxgIE6QVzqkM8k3wO0b0Aqoj7x__Bu9rbAtxjV-3DCo052Q4ED-McFuby5FqrwRSU7sU9Onbk4KZz1WgXYpPKgFAq1aBT_pM_Qp8x5vU87eYsNJ9FuGQU08empLWAdnjLINEfeyo8A");'></div>
 <div class="flex flex-1 flex-col gap-1 items-start">
-<p class="text-slate-500 text-xs font-medium">Advisor</p>
-<p class="text-sm font-normal leading-relaxed flex max-w-xs rounded-xl rounded-bl-none px-4 py-3 bg-slate-100 text-slate-700">
+<p class="text-gray-500 text-xs font-medium">Advisor</p>
+<p class="text-sm font-normal leading-relaxed flex max-w-xs rounded-xl rounded-bl-none px-4 py-3 bg-gray-100 text-gray-700">
                   Great! Based on your profile and needs, I've found an optimal policy proposal for you. You can review the details on the right. If you have any questions or need
                   further assistance, feel free to ask!
                 </p>
 </div>
 </div>
 </div>
-<div class="p-4 border-t border-slate-200">
+<div class="p-4 border-t border-gray-200">
 <div class="flex items-center gap-3">
-<input class="form-input flex-1 resize-none rounded-xl text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#3f8cbf] border border-slate-300 bg-slate-50 h-12 placeholder:text-slate-400 px-4 text-sm" placeholder="Type your message..." value=""/>
-<button class="flex items-center justify-center rounded-xl h-12 w-12 bg-[#3f8cbf] text-white hover:bg-[#337aa6] transition-colors duration-200">
+<input class="form-input flex-1 resize-none rounded-xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 border border-gray-300 bg-gray-50 h-12 placeholder:text-gray-400 px-4 text-sm" placeholder="Type your message..." value=""/>
+<button class="flex items-center justify-center rounded-xl h-12 w-12 bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200">
 <span class="material-icons-outlined">send</span>
 </button>
 </div>
@@ -82,23 +95,23 @@
 </div>
 <div class="lg:col-span-2 space-y-8">
 <div class="bg-white rounded-2xl shadow-lg p-6">
-<h2 class="text-2xl font-semibold text-slate-800 mb-6">Your Optimal Policy Proposal</h2>
+<h2 class="text-2xl font-semibold text-gray-800 mb-6">Your Optimal Policy Proposal</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
 <div class="md:col-span-1 w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAvCvHQPlhBkrCqNh4P7YrIVFTXUk6OOKi_00jLtJ3GQfRSD7AQ77xuSgxDHVEdxVo-7JMkOmnBkSs3w7eGp-X_LRTAU0PLzb9vAJmWh_kvP-g6BkfOm7yojIP_nTiYHEXvG-JCQRHOLupYKSsvCoUkyUut41hAf3BuUkAZy88TflIrlto23XQbUTnWYTyZpWfhvaAU0WxZl5zMqGrT_4AwwUN-QJh3UVCPjSkIYPQKSFJ7sjSVAgICSFINbEUutBtMMF498rM-Do");'></div>
 <div class="md:col-span-2 flex flex-col justify-between h-full">
 <div>
-<h4 class="text-lg font-semibold text-slate-800 mb-2">Comprehensive Coverage for Car and Home</h4>
-<p class="text-slate-600 text-sm leading-relaxed mb-4">
+<h4 class="text-lg font-semibold text-gray-800 mb-2">Comprehensive Coverage for Car and Home</h4>
+<p class="text-gray-600 text-sm leading-relaxed mb-4">
                     This policy offers extensive protection for your vehicle and residence, including liability, collision, and property damage coverage. It's designed to provide
                     peace of mind while staying within your budget.
                   </p>
 </div>
 <div class="flex flex-col sm:flex-row gap-3 mt-auto">
-<button class="flex-1 sm:flex-none whitespace-nowrap flex items-center justify-center gap-2 rounded-full h-10 px-6 bg-slate-100 text-[#3f8cbf] text-sm font-semibold hover:bg-slate-200 transition-colors duration-200">
+<button class="flex-1 sm:flex-none whitespace-nowrap flex items-center justify-center gap-2 rounded-full h-10 px-6 bg-gray-100 text-blue-600 text-sm font-semibold hover:bg-gray-200 transition-colors duration-200">
 <span class="material-icons-outlined text-base">visibility</span>
                     View Policy Details
                   </button>
-<button class="flex-1 sm:flex-none whitespace-nowrap flex items-center justify-center gap-2 rounded-full h-10 px-6 bg-[#3f8cbf] text-white text-sm font-semibold hover:bg-[#337aa6] transition-colors duration-200">
+<button class="flex-1 sm:flex-none whitespace-nowrap flex items-center justify-center gap-2 rounded-full h-10 px-6 bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition-colors duration-200">
                     Go to Insurance Company
                     <span class="material-icons-outlined text-base">arrow_forward</span>
 </button>
@@ -107,13 +120,13 @@
 </div>
 </div>
 <div class="bg-white rounded-2xl shadow-lg p-6">
-<h2 class="text-xl font-semibold text-slate-800 mb-4">Send Report via Email</h2>
+<h2 class="text-xl font-semibold text-gray-800 mb-4">Send Report via Email</h2>
 <form class="flex flex-col sm:flex-row items-end gap-4">
 <label class="flex-1 w-full">
-<span class="text-xs font-medium text-slate-600 mb-1 block">Email Address</span>
-<input class="form-input w-full rounded-xl text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#3f8cbf] border border-slate-300 bg-slate-50 h-12 placeholder:text-slate-400 p-4 text-sm" placeholder="Enter your email address" type="email" value=""/>
+<span class="text-xs font-medium text-gray-600 mb-1 block">Email Address</span>
+<input class="form-input w-full rounded-xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 border border-gray-300 bg-gray-50 h-12 placeholder:text-gray-400 p-4 text-sm" placeholder="Enter your email address" type="email" value=""/>
 </label>
-<button class="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full h-12 px-6 bg-[#3f8cbf] text-white text-sm font-semibold hover:bg-[#337aa6] transition-colors duration-200" type="submit">
+<button class="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full h-12 px-6 bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition-colors duration-200" type="submit">
 <span class="material-icons-outlined text-base">email</span>
                 Send Report
               </button>
@@ -122,6 +135,62 @@
 </div>
 </div>
 </main>
+<footer class="border-t border-color mt-auto px-10 py-8 bg-header">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<svg class="text-primary" fill="none" height="28" viewBox="0 0 48 48" width="28" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h3 class="text-xl font-bold tracking-[-0.015em] text-heading">BeAuare</h3>
 </div>
-
-</body></html>
+<p class="text-sm text-muted mb-2">Powered by Unipol</p>
+<p class="text-xs text-muted opacity-75">Your trusted partner in navigating life's uncertainties.</p>
+</div>
+<div>
+<h4 class="text-base font-semibold text-heading mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Home</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Check-up</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Simulations</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Advice</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-base font-semibold text-heading mb-4">Resources</h4>
+<ul class="space-y-2">
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">FAQ</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Support Center</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-base font-semibold text-heading mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-color flex flex-col sm:flex-row justify-between items-center">
+<p class="text-sm text-muted">© 2024 BeAuare. All rights reserved.</p>
+<div class="flex gap-4 mt-4 sm:mt-0">
+<a aria-label="Facebook" class="text-muted hover-text-primary transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"></path></svg>
+</a>
+<a aria-label="Twitter" class="text-muted hover-text-primary transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.477c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.213 0-.425-.015-.637A9.952 9.952 0 0024 4.555h.003z"></path></svg>
+</a>
+<a aria-label="Instagram" class="text-muted hover-text-primary transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.059 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>

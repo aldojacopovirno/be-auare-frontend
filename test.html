@@ -1,149 +1,265 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"/>
-<title>BeAuare - Your Risks</title>
-<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<style>
-    .material-icons {
-      font-family: 'Material Icons';
-      font-weight: normal;
-      font-style: normal;
-      font-size: 24px;
-      display: inline-block;
-      line-height: 1;
-      text-transform: none;
-      letter-spacing: normal;
-      word-wrap: normal;
-      white-space: nowrap;
-      direction: ltr;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-      -moz-osx-font-smoothing: grayscale;
-      font-feature-settings: 'liga';
-    }
-  </style>
-</head>
-<body class="bg-[#111B22]" style='font-family: Manrope, "Noto Sans", sans-serif;'>
-<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#243947] px-6 md:px-10 py-4 sticky top-0 z-50 bg-[#111B22]">
-<div class="flex items-center gap-3 text-white">
-<svg class="h-8 w-8 text-[#1993E5]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-<h2 class="text-white text-2xl font-bold tracking-tight">BeAuare</h2>
-</div>
-<nav class="hidden md:flex items-center gap-x-2 lg:gap-x-4">
-<a class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Home</a>
-<a class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Profile</a>
-<a class="text-[#1993E5] bg-[#1993E5]/10 px-3 py-2 rounded-md text-sm font-semibold transition-colors" href="#">Risks</a>
-<a class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Simulations</a>
-<a class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Advice</a>
-<a class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Support</a>
-</nav>
-<div class="flex items-center gap-2">
-<button aria-label="Notifications" class="flex items-center justify-center rounded-full h-10 w-10 hover:bg-[#243947] text-gray-400 hover:text-white transition-colors">
-<span class="material-icons text-2xl">notifications_none</span>
-</button>
-<button aria-label="User menu" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-[#1993E5] hover:opacity-90 transition-opacity" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfy4tbOOrEI4tVEU17We0pUz0hf6fGBZst5xZQ9bXhZ3FAZr5hQIypNqeQ0-bViS-9hy97h9H2saO794A7hCF3pkwA_rNZiYdbzRRTNL4ubOxSkZqnxNE_4DKKeGNMmFsdFvarb2zc5rbxyIicgPthl4KLo8-6Xn3cxL8KaDbKuZqIfT8SVI2BwihkQbb_JnaOY1mFkRRk8qKIehtLAPNtjp7clZCmc_eV6Ma2qTMLJyZsySoCW6tw7GeObUDSLpj8zZ05G-CZvoU");'></button>
-<button class="md:hidden text-gray-400 hover:text-white p-2 rounded-md hover:bg-[#243947] transition-colors">
-<span class="material-icons text-3xl">menu</span>
-</button>
-</div>
-</header>
-<main class="px-6 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-8 md:py-12">
-<div class="layout-content-container flex flex-col w-full max-w-6xl">
-<div class="mb-8">
-<h1 class="text-white text-3xl md:text-4xl font-bold tracking-tight">Your Risks &amp; Benefits</h1>
-<p class="text-gray-400 mt-2 text-base md:text-lg">Understand your potential exposures and how BeAuare can help you mitigate them. Risks are ordered by level of exposure.</p>
-</div>
-<div class="space-y-12">
-<section>
-<div class="flex items-center justify-between pb-4 pt-6 border-b border-[#243947] mb-6">
-<h2 class="text-[#1993E5] text-2xl font-semibold tracking-tight">Skiing</h2>
-<div class="flex items-center gap-2">
-<span class="text-red-500 font-semibold">High Exposure</span>
-<span class="material-icons text-red-500">warning</span>
-</div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<div class="bg-[#1A2632] rounded-xl shadow-lg overflow-hidden flex flex-col">
-<div class="p-6">
-<h3 class="text-white text-xl font-semibold leading-tight mb-1">Benefit: Ski Accident Coverage</h3>
-<p class="text-gray-400 text-sm">Your insurance covers ski accidents, potentially saving you <span class="font-bold text-green-400">$5,000</span> in medical expenses.</p>
-</div>
-<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDceSayfFoapEteS3YqtPxQF5BArXa7LY-h76Bt9Pk3xmJAcfyTSANMoGq_psk9aXfXCHmKFg53e1lHLBMypC5JDUYvmgTbACUVreB7tFRObe9YoQtrYMA2-tTNYclkL6sr17Kk7DetsbHcuYrGDQDP-noqmnSQ2G3O461U44k6usdoqhJeiDvB-5mawhqtWLfPT7b43MtDgHvByWiuORC3Iy4v41oruwcZQipA10u5IckrqvHIC2lHcMqqvwAjuTNBhghVMmq3Gtg");'></div>
-</div>
-<div class="bg-[#1A2632] rounded-xl shadow-lg overflow-hidden flex flex-col">
-<div class="p-6">
-<h3 class="text-white text-xl font-semibold leading-tight mb-1">Risk: Potential Ski Accident</h3>
-<p class="text-gray-400 text-sm"><span class="font-bold text-orange-400">15% of skiers</span> experience serious injuries on the slopes, leading to significant medical costs.</p>
-</div>
-<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAapKr0UL1plIQXThV8BieNSfGpdpK2tIZUB_EP4xfn06YZ7p26Z06qpH29jAxyiRs3zrAaPZlDoqa-wwOT09hRCX_4ea6-a-mg2Ynh3tM7gtK8M1g3DwABNm1vIP00Lnqg_d5V81-tWkR9Zc0Lyd8EmceBxX5GN8NQBzRYPBy7NrAKG09DiAy_bFsqOEKNsqden0I6M_9mYGpp5T-136K8fCkNKWELo8U3pZrYCvaWzUB_STX2EjDqjRrUg6_EXZ2sqDVjqDA3DYY");'></div>
-</div>
-</div>
-</section>
-<section>
-<div class="flex items-center justify-between pb-4 pt-6 border-b border-[#243947] mb-6">
-<h2 class="text-[#1993E5] text-2xl font-semibold tracking-tight">Home</h2>
-<div class="flex items-center gap-2">
-<span class="text-yellow-500 font-semibold">Medium Exposure</span>
-<span class="material-icons text-yellow-500">error_outline</span>
-</div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<div class="bg-[#1A2632] rounded-xl shadow-lg overflow-hidden flex flex-col">
-<div class="p-6">
-<h3 class="text-white text-xl font-semibold leading-tight mb-1">Benefit: Home Fire Coverage</h3>
-<p class="text-gray-400 text-sm">Your home insurance protects against fire damage, potentially saving you <span class="font-bold text-green-400">$100,000</span> in repairs.</p>
-</div>
-<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAYnO7Psu5UCEhoxpkP5hKQPmfUTkwjRLucbro7_h6wX-mGtS4yPC-MvRXocDmNMPGzFkFR_OR9mIqEJVUL73elqpFswT2_aXt7JR22BSD4eTVc1UUAkLuLoEgdola9IDqTssmlbd1V4EascUwqTt9TMYsLzw1Ojw5bj0hmhEZ4kF9s_nT1SR01NuRzy9Tcgh02CP26sw2kiAV66aV-Ywd6C0dZeZ9rModigs25g1DP2p7jAe_EH7ZJLAV_YrXmzRYwaE3yI6tUVHo");'></div>
-</div>
-<div class="bg-[#1A2632] rounded-xl shadow-lg overflow-hidden flex flex-col">
-<div class="p-6">
-<h3 class="text-white text-xl font-semibold leading-tight mb-1">Risk: Potential Home Fire</h3>
-<p class="text-gray-400 text-sm"><span class="font-bold text-orange-400">1% of homes</span> experience a fire each year, resulting in substantial property damage.</p>
-</div>
-<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAZWpca6maTkvM55nSScLvLjnuCv015mZF-YkNYrxo4K_ozX75jgtbFEzI77sZEfk1lw3nnQg_Nc-ORppyrDfTalYW420nKEry8JMLUFEs-cuuSL_rJVMmJQUIbhfTQut8lebCYJpLKqC7DCydVDTo_P_YE8EiXm_WoncZHkiRLW9ZjP3lX7Cng6tkVQKaYI9whwoN5qUINv5rSrqzcWPEkcGVvCCVpw3Vzn0lwoSiCF7A4xAaw47EcGFeQaqcdfwoAHhOj8PxSnQ");'></div>
-</div>
-</div>
-</section>
-<section>
-<div class="flex items-center justify-between pb-4 pt-6 border-b border-[#243947] mb-6">
-<h2 class="text-[#1993E5] text-2xl font-semibold tracking-tight">Travel</h2>
-<div class="flex items-center gap-2">
-<span class="text-green-500 font-semibold">Low Exposure</span>
-<span class="material-icons text-green-500">check_circle_outline</span>
-</div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<div class="bg-[#1A2632] rounded-xl shadow-lg overflow-hidden flex flex-col">
-<div class="p-6">
-<h3 class="text-white text-xl font-semibold leading-tight mb-1">Benefit: Travel Disruption Coverage</h3>
-<p class="text-gray-400 text-sm">Your policy covers flight cancellations and lost baggage, potentially saving you <span class="font-bold text-green-400">$1,000</span> per trip.</p>
-</div>
-<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAS2wDnZz0wfKua-A22wOtL3k5dGpLrldY0UrA4-gRi6CJqBc_6PTPydxsvRDF_kuQLAVN348jewgSVlGXpf4A-SpPeC9X4GZ0CI5tZgzh7cN60EDlM7PoWv9_uabqpVS4gOCGJYJ9ONZ64srsZ6_Mj9SE0EZWOtDkMym4IImM_hUPpoWwxUpgIbDGxByKFt3OJhKoeDbvSS4XYpsu5qUPhpX4kVmyPMVn9__F8fItQa3mPOeNHQ27PbagngRj59_2D_JCu2fu7Nyg");'></div>
-</div>
-<div class="bg-[#1A2632] rounded-xl shadow-lg overflow-hidden flex flex-col">
-<div class="p-6">
-<h3 class="text-white text-xl font-semibold leading-tight mb-1">Risk: Travel Mishaps</h3>
-<p class="text-gray-400 text-sm"><span class="font-bold text-orange-400">5% of trips</span> face disruptions. While less frequent, it's good to be covered.</p>
-</div>
-<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAS2wDnZz0wfKua-A22wOtL3k5dGpLrldY0UrA4-gRi6CJqBc_6PTPydxsvRDF_kuQLAVN348jewgSVlGXpf4A-SpPeC9X4GZ0CI5tZgzh7cN60EDlM7PoWv9_uabqpVS4gOCGJYJ9ONZ64srsZ6_Mj9SE0EZWOtDkMym4IImM_hUPpoWwxUpgIbDGxByKFt3OJhKoeDbvSS4XYpsu5qUPhpX4kVmyPMVn9__F8fItQa3mPOeNHQ27PbagngRj59_2D_JCu2fu7Nyg");'></div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</main>
-<footer class="border-t border-solid border-t-[#243947] px-10 py-6 text-center">
-<p class="text-sm text-gray-500">© 2024 BeAuare, powered by Unipol. All rights reserved.</p>
-</footer>
-</div>
-</div>
+<html><head>
+  <meta charset="utf-8"/>
+  <meta charset="utf-8"/>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+  <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <title>BeAware - Insurance Check-up</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+      :root {
+        --primary-color: #2563EB; /* blue-600 */
+        --secondary-color: #1D4ED8; /* blue-700 for hovers */
+        --accent-color: #DBEAFE; /* blue-100 for checked bg */
+        --text-primary: #1F2937; /* gray-800 */
+        --text-secondary: #4B5563; /* gray-600 */
+        --background-primary: #F9FAFB; /* gray-50 */
+        --background-secondary: #FFFFFF; /* white */
+        --border-color: #E5E7EB; /* gray-200 */
+      }
+      /* Dark theme variables remain for potential future use, but won't be active by default */
+      .dark {
+        --primary-color: #1993E5;
+        --secondary-color: #0077CC;
+        --accent-color: #2C3E50;
+        --text-primary: #F0F4F8;
+        --text-secondary: #AEB2B7;
+        --background-primary: #111B22;
+        --background-secondary: #1F2937;
+        --border-color: #243947;
+      }
+      body {
+        font-family: 'Manrope', 'Noto Sans', sans-serif;
+        background-color: var(--background-primary);
+        color: var(--text-primary);
+      }
+      .bg-primary { background-color: var(--primary-color); }
+      .text-primary { color: var(--primary-color); }
+      .border-primary { border-color: var(--primary-color); }
+      .hover\\:bg-secondary:hover { background-color: var(--secondary-color); } /* Escaped colon */
+      .hover\\:text-primary:hover { color: var(--primary-color); } /* Escaped colon */
+      .hover\\:border-primary:hover { border-color: var(--primary-color); } /* Escaped colon */
+      .bg-background-primary { background-color: var(--background-primary); }
+      .bg-background-secondary { background-color: var(--background-secondary); }
+      .text-text-primary { color: var(--text-primary); }
+      .text-text-secondary { color: var(--text-secondary); }
+      .border-border-color { border-color: var(--border-color); }
 
-</body></html>
+      /* Styling for labels containing checked radio buttons */
+      label:has(input[type="radio"]:checked) {
+        border-color: var(--primary-color);
+        background-color: var(--accent-color);
+      }
+      label:has(input[type="radio"]:checked) .material-icons,
+      label:has(input[type="radio"]:checked) span {
+          color: var(--primary-color);
+      }
+      /* Keep original icon color if not checked, override possible text-primary from parent */
+      label:not(:has(input[type="radio"]:checked)) .material-icons {
+        color: var(--text-secondary);
+      }
+      label:not(:has(input[type="radio"]:checked)) span.text-text-primary {
+         color: var(--text-primary); /* Ensure title span keeps its color */
+      }
+       label:not(:has(input[type="radio"]:checked)) span.text-text-secondary {
+         color: var(--text-secondary); /* Ensure description span keeps its color */
+      }
+
+
+      .accent-primary {
+          accent-color: var(--primary-color);
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--background-secondary);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--border-color);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--text-secondary);
+      }
+    </style>
+  </head>
+  <body>
+  <div class="relative flex size-full min-h-screen flex-col bg-background-primary group/design-root overflow-x-hidden" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');">
+  <div class="layout-container flex h-full grow flex-col">
+  <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-color px-10 py-3 sticky top-0 z-50 bg-header shadow-sm">
+  <div class="flex items-center gap-4">
+  <svg class="text-primary" fill="none" height="32" viewBox="0 0 48 48" width="32" xmlns="http://www.w3.org/2000/svg">
+  <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+  </svg>
+  <h2 class="text-2xl font-bold tracking-[-0.015em] text-heading">BeAuare</h2>
+  </div>
+  <nav class="flex items-center gap-8 text-base font-medium">
+  <a class="text-body hover-text-primary transition-colors py-2" href="#">Home</a>
+  <a class="text-primary font-semibold border-b-2 border-primary py-2" href="#">Check-up</a>
+  <a class="text-body hover-text-primary transition-colors py-2" href="#">Simulations</a>
+  <a class="text-body hover-text-primary transition-colors py-2" href="#">Advice</a>
+  </nav>
+  <div class="flex items-center gap-4">
+  <button class="flex items-center justify-center rounded-full h-10 w-10 bg-icon-button text-icon transition-colors hover-glow">
+  <span class="material-icons-outlined text-xl">chat_bubble_outline</span>
+  </button>
+  <button class="flex items-center justify-center rounded-full h-10 w-10 bg-icon-button text-icon transition-colors hover-glow">
+  <span class="material-icons-outlined text-xl">notifications_none</span>
+  </button>
+  <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary profile-border hover-glow" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYcYqZFKg4nQfK6jFgoZ0Cbo_p5iszV3tBdl5hxKYKrJ9qnhcqOa0G2o8D9oWzOnLpQO6Rt-7JMkfxSkxKjMfOfXaiJSmOTFieTeS6Pv-FQTZrQ_uBKgKIWDtpnKfnjCPFRzyqqvKGQiwU1luhCoL9mgsm7WVF6Khr9fEdbmI4ht-UVSlRBrblUwFKE1quxjCmzmrC0aYPVxy3li04SXezoWu0sWOOsEd-NuwZ-7x7iKVkJHNB3bmG_0mC1VH2jYzjNlXeQp3CUZw");'></div>
+  </div>
+  </header>
+  <main class="px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-8">
+  <div class="layout-content-container flex flex-col max-w-[720px] flex-1 w-full">
+  <div class="flex flex-col gap-2 p-4">
+  <div class="flex gap-4 justify-between items-center">
+  <p class="text-text-secondary text-sm font-medium leading-normal">Question 2 of 10</p>
+  <button class="text-text-secondary hover:text-text-primary text-sm font-medium leading-normal transition-colors flex items-center gap-1">
+  <span class="material-icons-outlined text-base">close</span> Exit
+                </button>
+  </div>
+  <div class="h-2 rounded-full bg-background-secondary overflow-hidden">
+  <div class="h-full rounded-full bg-primary" style="width: 20%;"></div>
+  </div>
+  </div>
+  <section class="py-8 px-4">
+  <h2 class="text-text-primary tracking-tight text-3xl font-bold leading-tight text-left pb-6">Describe your ideal weekend getaway.</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <label class="flex flex-col items-center justify-center p-6 rounded-lg border-2 border-border-color hover:border-primary transition-all cursor-pointer aspect-square">
+  <span class="material-icons text-5xl text-text-secondary mb-3">hiking</span>
+  <span class="text-text-primary text-lg font-semibold leading-normal text-center">Adventure in the mountains</span>
+  <span class="text-text-secondary text-sm text-center mt-1">Fresh air, challenging trails, and breathtaking views.</span>
+  <input class="absolute opacity-0 h-0 w-0" name="weekend_getaway" type="radio"/>
+  </label>
+  <label class="flex flex-col items-center justify-center p-6 rounded-lg border-2 border-border-color hover:border-primary transition-all cursor-pointer aspect-square">
+  <span class="material-icons text-5xl text-text-secondary mb-3">beach_access</span>
+  <span class="text-text-primary text-lg font-semibold leading-normal text-center">Relaxing by the sea</span>
+  <span class="text-text-secondary text-sm text-center mt-1">Sun, sand, and the sound of waves.</span>
+  <input class="absolute opacity-0 h-0 w-0" name="weekend_getaway" type="radio"/>
+  </label>
+  <label class="flex flex-col items-center justify-center p-6 rounded-lg border-2 border-border-color hover:border-primary transition-all cursor-pointer aspect-square">
+  <span class="material-icons text-5xl text-text-secondary mb-3">museum</span>
+  <span class="text-text-primary text-lg font-semibold leading-normal text-center">Cultural city break</span>
+  <span class="text-text-secondary text-sm text-center mt-1">Exploring museums, art galleries, and historical sites.</span>
+  <input class="absolute opacity-0 h-0 w-0" name="weekend_getaway" type="radio"/>
+  </label>
+  <label class="flex flex-col items-center justify-center p-6 rounded-lg border-2 border-border-color hover:border-primary transition-all cursor-pointer aspect-square">
+  <span class="material-icons text-5xl text-text-secondary mb-3">cottage</span>
+  <span class="text-text-primary text-lg font-semibold leading-normal text-center">Cozy cabin retreat</span>
+  <span class="text-text-secondary text-sm text-center mt-1">Reading by the fireplace and enjoying nature's tranquility.</span>
+  <input class="absolute opacity-0 h-0 w-0" name="weekend_getaway" type="radio"/>
+  </label>
+  </div>
+  </section>
+  <section class="py-8 px-4">
+  <h2 class="text-text-primary tracking-tight text-3xl font-bold leading-tight text-left pb-6">Which of these best describes your approach to new experiences?</h2>
+  <div class="flex flex-col gap-4">
+  <div class="text-text-primary text-lg font-semibold">Cautious</div>
+  <input class="w-full h-2 bg-background-secondary rounded-lg appearance-none cursor-pointer accent-primary" max="5" min="1" type="range" value="3"/>
+  <div class="flex justify-between text-sm text-text-secondary">
+  <span>I prefer to stick to what I know.</span>
+  <span>I embrace the unknown.</span>
+  </div>
+  <div class="text-text-primary text-lg font-semibold mt-2 text-right">Adventurous</div>
+  </div>
+  </section>
+  <section class="py-8 px-4">
+  <h2 class="text-text-primary tracking-tight text-3xl font-bold leading-tight text-left pb-6">Imagine you find a mysterious, unmarked package. What's your first instinct?</h2>
+  <div class="space-y-3">
+  <label class="flex items-center gap-x-4 p-4 rounded-lg border-2 border-border-color hover:border-primary transition-all cursor-pointer">
+  <span class="material-icons text-2xl text-text-secondary">search</span>
+  <span class="text-text-primary text-base font-medium leading-normal flex-1">Carefully inspect it for clues before opening.</span>
+  <input class="h-5 w-5 rounded-full border-border-color border-2 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 checked:focus:border-primary focus:border-border-color focus:outline-none" name="package_instinct" type="radio"/>
+  </label>
+  <label class="flex items-center gap-x-4 p-4 rounded-lg border-2 border-border-color hover:border-primary transition-all cursor-pointer">
+  <span class="material-icons text-2xl text-text-secondary">call</span>
+  <span class="text-text-primary text-base font-medium leading-normal flex-1">Ask around if anyone is missing a package.</span>
+  <input class="h-5 w-5 rounded-full border-border-color border-2 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 checked:focus:border-primary focus:border-border-color focus:outline-none" name="package_instinct" type="radio"/>
+  </label>
+  <label class="flex items-center gap-x-4 p-4 rounded-lg border-2 border-border-color hover:border-primary transition-all cursor-pointer">
+  <span class="material-icons text-2xl text-text-secondary">local_police</span>
+  <span class="text-text-primary text-base font-medium leading-normal flex-1">Leave it and report it to the authorities.</span>
+  <input class="h-5 w-5 rounded-full border-border-color border-2 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 checked:focus:border-primary focus:border-border-color focus:outline-none" name="package_instinct" type="radio"/>
+  </label>
+  <label class="flex items-center gap-x-4 p-4 rounded-lg border-2 border-border-color hover:border-primary transition-all cursor-pointer">
+  <span class="material-icons text-2xl text-text-secondary">redeem</span>
+  <span class="text-text-primary text-base font-medium leading-normal flex-1">Open it immediately - curiosity wins!</span>
+  <input class="h-5 w-5 rounded-full border-border-color border-2 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 checked:focus:border-primary focus:border-border-color focus:outline-none" name="package_instinct" type="radio"/>
+  </label>
+  </div>
+  </section>
+  <div class="flex px-4 py-6 justify-end items-center gap-4 border-t border-border-color mt-auto">
+  <button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-background-secondary text-text-primary text-base font-bold leading-normal tracking-[0.015em] hover:bg-border-color transition-colors">
+  <span class="truncate">Back</span>
+  </button>
+  <button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-secondary transition-colors">
+  <span class="truncate">Next</span>
+  </button>
+  </div>
+  </div>
+  </main>
+  </div>
+  </div>
+  <footer class="border-t border-color mt-auto px-10 py-8 bg-header">
+  <div class="max-w-7xl mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+  <div>
+  <div class="flex items-center gap-3 mb-4">
+  <svg class="text-primary" fill="none" height="28" viewBox="0 0 48 48" width="28" xmlns="http://www.w3.org/2000/svg">
+  <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+  </svg>
+  <h3 class="text-xl font-bold tracking-[-0.015em] text-heading">BeAuare</h3>
+  </div>
+  <p class="text-sm text-muted mb-2">Powered by Unipol</p>
+  <p class="text-xs text-muted opacity-75">Your trusted partner in navigating life's uncertainties.</p>
+  </div>
+  <div>
+  <h4 class="text-base font-semibold text-heading mb-4">Quick Links</h4>
+  <ul class="space-y-2">
+  <li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Home</a></li>
+  <li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Check-up</a></li>
+  <li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Simulations</a></li>
+  <li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Advice</a></li>
+  </ul>
+  </div>
+  <div>
+  <h4 class="text-base font-semibold text-heading mb-4">Resources</h4>
+  <ul class="space-y-2">
+  <li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">FAQ</a></li>
+  <li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Blog</a></li>
+  <li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Support Center</a></li>
+  </ul>
+  </div>
+  <div>
+  <h4 class="text-base font-semibold text-heading mb-4">Legal</h4>
+  <ul class="space-y-2">
+  <li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Privacy Policy</a></li>
+  <li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Terms of Service</a></li>
+  <li><a class="text-sm text-muted hover-text-primary transition-colors" href="#">Cookie Policy</a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="mt-8 pt-8 border-t border-color flex flex-col sm:flex-row justify-between items-center">
+  <p class="text-sm text-muted">© 2024 BeAuare. All rights reserved.</p>
+  <div class="flex gap-4 mt-4 sm:mt-0">
+  <a aria-label="Facebook" class="text-muted hover-text-primary transition-colors" href="#">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"></path></svg>
+  </a>
+  <a aria-label="Twitter" class="text-muted hover-text-primary transition-colors" href="#">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.477c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.213 0-.425-.015-.637A9.952 9.952 0 0024 4.555h.003z"></path></svg>
+  </a>
+  <a aria-label="Instagram" class="text-muted hover-text-primary transition-colors" href="#">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+  </a>
+  </div>
+  </div>
+  </div>
+  </footer>
+  </div>
+  </div>
+  </body></html>

@@ -1,9 +1,10 @@
-<html><head>
+<!DOCTYPE html>
+<html lang="en"><head>
 <meta charset="utf-8"/>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B600%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
-<title>BeAuare - Health Risk Assessment</title>
+<title>BeAuare - Your Risks</title>
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style>
@@ -15,17 +16,17 @@
     }
     body {
       font-family: 'Manrope', 'Noto Sans', sans-serif;
-      background-color: #F9FAFB;
-      color: #374151;
+      background-color: #F9FAFB; /* gray-50 */
+      color: #374151; /* gray-700 */
     }
     .bg-header { background-color: #FFFFFF; }
     .bg-surface { background-color: #FFFFFF; }
-    .text-primary { color: #2563EB; }
-    .text-heading { color: #1F2937; }
-    .text-body { color: #374151; }
-    .text-muted { color: #6B7280; }
-    .border-color { border-color: #E5E7EB; }
-    .hover-text-primary:hover { color: #1D4ED8; }
+    .text-primary { color: #2563EB; } /* blue-600 */
+    .text-heading { color: #1F2937; } /* gray-800 */
+    .text-body { color: #374151; } /* gray-700 */
+    .text-muted { color: #6B7280; } /* gray-600 */
+    .border-color { border-color: #E5E7EB; } /* gray-200 */
+    .hover-text-primary:hover { color: #1D4ED8; } /* blue-700 */
     .bg-button-primary { background-color: #2563EB; color: #FFFFFF; }
     .bg-button-primary:hover { background-color: #1D4ED8; }
     .bg-button-secondary { background-color: #E5E7EB; color: #374151; }
@@ -52,10 +53,27 @@
     ::placeholder {
         color: #9CA3AF;
     }
+    .material-icons-outlined { /* Ensure Material Icons Outlined are styled if used */
+      font-family: 'Material Icons Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: 'liga';
+    }
   </style>
 </head>
 <body class="text-body">
-<div class="relative flex size-full min-h-screen flex-col group/design-root">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
 <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-color px-10 py-3 sticky top-0 z-50 bg-header shadow-sm">
 <div class="flex items-center gap-4">
@@ -80,131 +98,88 @@
 <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary profile-border hover-glow" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYcYqZFKg4nQfK6jFgoZ0Cbo_p5iszV3tBdl5hxKYKrJ9qnhcqOa0G2o8D9oWzOnLpQO6Rt-7JMkfxSkxKjMfOfXaiJSmOTFieTeS6Pv-FQTZrQ_uBKgKIWDtpnKfnjCPFRzyqqvKGQiwU1luhCoL9mgsm7WVF6Khr9fEdbmI4ht-UVSlRBrblUwFKE1quxjCmzmrC0aYPVxy3li04SXezoWu0sWOOsEd-NuwZ-7x7iKVkJHNB3bmG_0mC1VH2jYzjNlXeQp3CUZw");'></div>
 </div>
 </header>
-<main class="px-10 md:px-20 lg:px-40 py-8 flex flex-1 justify-center">
-<div class="layout-content-container flex flex-col max-w-5xl flex-1">
-<div class="flex items-center gap-2 p-4 text-sm font-medium">
-<a class="breadcrumb-inactive hover-text-primary transition-colors" href="#">Check-up</a>
-<span class="text-muted">/</span>
-<span class="breadcrumb-active">Health</span>
+<main class="px-6 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-8 md:py-12">
+<div class="layout-content-container flex flex-col w-full max-w-6xl">
+<div class="mb-8">
+<h1 class="text-heading text-3xl md:text-4xl font-bold tracking-tight">Your Risks &amp; Benefits</h1>
+<p class="text-muted mt-2 text-base md:text-lg">Understand your potential exposures and how BeAuare can help you mitigate them. Risks are ordered by level of exposure.</p>
 </div>
-<div class="p-4">
-<h1 class="text-3xl font-bold tracking-tight text-heading">Health Risk Assessment</h1>
-<p class="text-muted text-base mt-2">
-              Your health risk assessment provides a comprehensive overview of your current health status and potential future risks. This assessment is based on your lifestyle, medical history, and other relevant factors. Understanding these risks can help you make informed decisions about your health and take proactive steps to mitigate potential issues.
-            </p>
-</div>
-<section class="p-4 mt-6">
-<h2 class="text-xl font-semibold tracking-tight text-heading">Risk Details</h2>
-<p class="text-muted text-base mt-1">
-              This section provides detailed information about the specific health risk you selected. It includes an overview of the risk, its potential economic impact, and its incidence rate within the population.
-            </p>
-<div class="mt-6 grid grid-cols-1 md:grid-cols-[auto_1fr] gap-x-8 gap-y-4 border-t border-color pt-6">
-<p class="text-muted text-sm">Risk Type</p>
-<p class="text-heading text-sm font-medium">Cardiovascular Disease</p>
-<p class="text-muted text-sm">Economic Impact</p>
-<p class="text-heading text-sm font-medium">$50,000 - $100,000</p>
-<p class="text-muted text-sm">Incidence Rate</p>
-<p class="text-heading text-sm font-medium">1 in 3 adults</p>
-</div>
-</section>
-<section class="p-4 mt-8">
-<h2 class="text-xl font-semibold tracking-tight text-heading">Risk Evolution</h2>
-<p class="text-muted text-base mt-1">
-              The graph below illustrates how your exposure to this health risk may change over time. Factors such as lifestyle changes, medical interventions, and genetic predispositions can influence this evolution. You can interact with the graph to simulate the impact of different actions on your risk trajectory.
-            </p>
-<div class="mt-6 p-6 bg-surface rounded-xl shadow-lg">
-<div class="flex justify-between items-start">
-<div>
-<p class="text-base font-medium text-heading">Health Risk Over Time</p>
-<p class="text-3xl font-bold text-heading mt-1">Medium</p>
-</div>
-<div class="text-right">
-<p class="text-sm text-muted">In 5 Years</p>
-<p class="text-lg font-semibold text-green-500">
-                +10%
-</p>
+<div class="space-y-12">
+<section>
+<div class="flex items-center justify-between pb-4 pt-6 border-b border-color mb-6">
+<h2 class="text-primary text-2xl font-semibold tracking-tight">Skiing</h2>
+<div class="flex items-center gap-2">
+<span class="text-red-500 font-semibold">High Exposure</span>
+<span class="material-icons-outlined text-red-500">warning</span>
 </div>
 </div>
-<div class="mt-6">
-<svg fill="none" height="160" preserveAspectRatio="none" viewBox="-3 0 478 150" width="100%" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H326.769H0V109Z" fill="url(#paint0_linear_1131_5935_themed)"></path>
-<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#2563EB" stroke-linecap="round" stroke-width="3"></path>
-<defs>
-<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1131_5935_themed" x1="236" x2="236" y1="1" y2="149">
-<stop stop-color="#2563EB" stop-opacity="0.3"></stop>
-<stop offset="1" stop-color="#2563EB" stop-opacity="0"></stop>
-</linearGradient>
-</defs>
-</svg>
-<div class="flex justify-around mt-2 text-xs font-medium text-muted">
-<span>2024</span>
-<span>2025</span>
-<span>2026</span>
-<span>2027</span>
-<span>2028</span>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="bg-surface rounded-xl shadow-lg overflow-hidden flex flex-col">
+<div class="p-6">
+<h3 class="text-heading text-xl font-semibold leading-tight mb-1">Benefit: Ski Accident Coverage</h3>
+<p class="text-muted text-sm">Your insurance covers ski accidents, potentially saving you <span class="font-bold text-green-500">$5,000</span> in medical expenses.</p>
 </div>
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDceSayfFoapEteS3YqtPxQF5BArXa7LY-h76Bt9Pk3xmJAcfyTSANMoGq_psk9aXfXCHmKFg53e1lHLBMypC5JDUYvmgTbACUVreB7tFRObe9YoQtrYMA2-tTNYclkL6sr17Kk7DetsbHcuYrGDQDP-noqmnSQ2G3O461U44k6usdoqhJEiDvB-5mawhqtWLfPT7b43MtDgHvByWiuORC3Iy4v41oruwcZQipA10u5IckrqvHIC2lHcMqqvwAjuTNBhghVMmq3Gtg");'></div>
+</div>
+<div class="bg-surface rounded-xl shadow-lg overflow-hidden flex flex-col">
+<div class="p-6">
+<h3 class="text-heading text-xl font-semibold leading-tight mb-1">Risk: Potential Ski Accident</h3>
+<p class="text-muted text-sm"><span class="font-bold text-orange-400">15% of skiers</span> experience serious injuries on the slopes, leading to significant medical costs.</p>
+</div>
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAapKr0UL1plIQXThV8BieNSfGpdpK2tIZUB_EP4xfn06YZ7p26Z06qpH29jAxyiRs3zrAaPZlDoqa-wwOT09hRCX_4ea6-a-mg2Ynh3tM7gtK8M1g3DwABNm1vIP00Lnqg_d5V81-tWkR9Zc0Lyd8EmceBxX5GN8NQBzRYPBy7NrAKG09DiAy_bFsqOEKNsqden0I6M_9mYGpp5T-136K8fCkNKWELo8U3pZrYCvaWzUB_STX2EjDqjRrUg6_EXZ2sqDVjqDA3DYY");'></div>
 </div>
 </div>
 </section>
-<section class="p-4 mt-8">
-<h2 class="text-xl font-semibold tracking-tight text-heading">Mitigation Strategies</h2>
-<p class="text-muted text-base mt-1">
-              Here are some best practices you can follow to reduce your exposure to this health risk. Implementing these strategies can positively impact the evolution of your risk, as reflected in the graph above.
-            </p>
-<div class="mt-6 @container">
-<div class="overflow-hidden rounded-xl border border-color bg-surface shadow-lg">
-<table class="w-full text-sm">
-<thead class="table-header-bg">
-<tr>
-<th class="px-6 py-4 text-left font-semibold text-heading w-[35%]">Strategy</th>
-<th class="px-6 py-4 text-left font-semibold text-heading w-[45%]">Description</th>
-<th class="px-6 py-4 text-left font-semibold text-heading w-[20%]">Impact</th>
-</tr>
-</thead>
-<tbody class="divide-y table-row-border">
-<tr>
-<td class="px-6 py-4 text-body align-top">Regular Exercise</td>
-<td class="px-6 py-4 text-muted align-top">
-                        Engage in at least 150 minutes of moderate-intensity or 75 minutes of vigorous-intensity aerobic activity per week.
-                      </td>
-<td class="px-6 py-4 align-top">
-<button class="w-full h-9 px-4 rounded-md bg-button-primary text-sm font-medium transition-colors hover-glow">
-                          High
-                        </button>
-</td>
-</tr>
-<tr>
-<td class="px-6 py-4 text-body align-top">Healthy Diet</td>
-<td class="px-6 py-4 text-muted align-top">
-                        Consume a balanced diet rich in fruits, vegetables, whole grains, and lean proteins, while limiting saturated fats, sugars, and sodium.
-                      </td>
-<td class="px-6 py-4 align-top">
-<button class="w-full h-9 px-4 rounded-md bg-button-primary text-sm font-medium transition-colors hover-glow">
-                          High
-                        </button>
-</td>
-</tr>
-<tr>
-<td class="px-6 py-4 text-body align-top">Regular Check-ups</td>
-<td class="px-6 py-4 text-muted align-top">
-                        Schedule regular health check-ups with your doctor to monitor your health and identify potential issues early.
-                      </td>
-<td class="px-6 py-4 align-top">
-<button class="w-full h-9 px-4 rounded-md bg-button-secondary text-sm font-medium transition-colors hover-glow">
-                          Medium
-                        </button>
-</td>
-</tr>
-</tbody>
-</table>
+<section>
+<div class="flex items-center justify-between pb-4 pt-6 border-b border-color mb-6">
+<h2 class="text-primary text-2xl font-semibold tracking-tight">Home</h2>
+<div class="flex items-center gap-2">
+<span class="text-yellow-500 font-semibold">Medium Exposure</span>
+<span class="material-icons-outlined text-yellow-500">error_outline</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="bg-surface rounded-xl shadow-lg overflow-hidden flex flex-col">
+<div class="p-6">
+<h3 class="text-heading text-xl font-semibold leading-tight mb-1">Benefit: Home Fire Coverage</h3>
+<p class="text-muted text-sm">Your home insurance protects against fire damage, potentially saving you <span class="font-bold text-green-500">$100,000</span> in repairs.</p>
+</div>
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAYnO7Psu5UCEhoxpkP5hKQPmfUTkwjRLucbro7_h6wX-mGtS4yPC-MvRXocDmNMPGzFkFR_OR9mIqEJVUL73elqpFswT2_aXt7JR22BSD4eTVc1UUAkLuLoEgdola9IDqTssmlbd1V4EascUwqTt9TMYsLzw1Ojw5bj0hmhEZ4kF9s_nT1SR01NuRzy9Tcgh02CP26sw2kiAV66aV-Ywd6C0dZeZ9rModigs25g1DP2p7jAe_EH7ZJLAV_YrXmzRYwaE3yI6tUVHo");'></div>
+</div>
+<div class="bg-surface rounded-xl shadow-lg overflow-hidden flex flex-col">
+<div class="p-6">
+<h3 class="text-heading text-xl font-semibold leading-tight mb-1">Risk: Potential Home Fire</h3>
+<p class="text-muted text-sm"><span class="font-bold text-orange-400">1% of homes</span> experience a fire each year, resulting in substantial property damage.</p>
+</div>
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAZWpca6maTkvM55nSScLvLjnuCv015mZF-YkNYrxo4K_ozX75jgtbFEzI77sZEfk1lw3nnQg_Nc-ORppyrDfTalYW420nKEry8JMLUFEs-cuuSL_rJVMmJQUIbhfTQut8lebCYJpLKqC7DCydVDTo_P_YE8EiXm_WoncZHkiRLW9ZjP3lX7Cng6tkVQKaYI9whwoN5qUINv5rSrqzcWPEkcGVvCCVpw3Vzn0lwoSiCF7A4xAaw47EcGFeQaqcdfwoAHhOj8PxSnQ");'></div>
 </div>
 </div>
 </section>
-<div class="mt-10 flex justify-end p-4">
-<a class="inline-flex items-center gap-2 rounded-lg bg-button-primary px-6 py-3 text-base font-semibold text-white shadow-md transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2563EB] hover-glow" href="#">
-<span>Continue to Next Step</span>
-<span class="material-icons-outlined text-xl">arrow_forward</span>
-</a>
+<section>
+<div class="flex items-center justify-between pb-4 pt-6 border-b border-color mb-6">
+<h2 class="text-primary text-2xl font-semibold tracking-tight">Travel</h2>
+<div class="flex items-center gap-2">
+<span class="text-green-500 font-semibold">Low Exposure</span>
+<span class="material-icons-outlined text-green-500">check_circle_outline</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="bg-surface rounded-xl shadow-lg overflow-hidden flex flex-col">
+<div class="p-6">
+<h3 class="text-heading text-xl font-semibold leading-tight mb-1">Benefit: Travel Disruption Coverage</h3>
+<p class="text-muted text-sm">Your policy covers flight cancellations and lost baggage, potentially saving you <span class="font-bold text-green-500">$1,000</span> per trip.</p>
+</div>
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAS2wDnZz0wfKua-A22wOtL3k5dGpLrldY0UrA4-gRi6CJqBc_6PTPydxsvRDF_kuQLAVN348jewgSVlGXpf4A-SpPeC9X4GZ0CI5tZgzh7cN60EDlM7PoWv9_uabqpVS4gOCGJYJ9ONZ64srsZ6_Mj9SE0EZWOtDkMym4IImM_hUPpoWwxUpgIbDGxByKFt3OJhKoeDbvSS4XYpsu5qUPhpX4kVmyPMVn9__F8fItQa3mPOeNHQ27PbagngRj59_2D_JCu2fu7Nyg");'></div>
+</div>
+<div class="bg-surface rounded-xl shadow-lg overflow-hidden flex flex-col">
+<div class="p-6">
+<h3 class="text-heading text-xl font-semibold leading-tight mb-1">Risk: Travel Mishaps</h3>
+<p class="text-muted text-sm"><span class="font-bold text-orange-400">5% of trips</span> face disruptions. While less frequent, it's good to be covered.</p>
+</div>
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover mt-auto" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAS2wDnZz0wfKua-A22wOtL3k5dGpLrldY0UrA4-gRi6CJqBc_6PTPydxsvRDF_kuQLAVN348jewgSVlGXpf4A-SpPeC9X4GZ0CI5tZgzh7cN60EDlM7PoWv9_uabqpVS4gOCGJYJ9ONZ64srsZ6_Mj9SE0EZWOtDkMym4IImM_hUPpoWwxUpgIbDGxByKFt3OJhKoeDbvSS4XYpsu5qUPhpX4kVmyPMVn9__F8fItQa3mPOeNHQ27PbagngRj59_2D_JCu2fu7Nyg");'></div>
+</div>
+</div>
+</section>
 </div>
 </div>
 </main>
