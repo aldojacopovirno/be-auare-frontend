@@ -20,7 +20,7 @@ BeAuare is a modern, user-centric frontend prototype for an insurance advisory p
 
 | File                | Description                                                      |
 |---------------------|------------------------------------------------------------------|
-| `landing_page.html` | Main landing page with navigation and feature highlights          |
+| `landing_page.html` | Main landing page with navigation and feature highlights         |
 | `assesment.html`    | Health risk assessment tool                                      |
 | `card.html`         | Personalized risk and benefit cards                              |
 | `chatbot.html`      | Chatbot interface for insurance advice                           |
